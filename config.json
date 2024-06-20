@@ -1,127 +1,54 @@
 {
   "instructions": [
     "<p>",
+    "填写下面表格，并点击<b>提交</b>。如提交失败，请点击<b>下载</b>，",
+    "然后将表格发至我们的邮箱：<strong class='email-placeholder'>[littlemissdragon@outlook.com]</strong>.",
+    "收到您的信息后，我们会在24小时内（工作日）回复您。(带*号的问题为必填信息。)",
+    "</p>",
+    "<p>",
     "Fill out the form below, and click <b>Send</b> to submit it.",
     "If that should fail, simply click <b>Download Form</b> and manually",
     "email the completed form to:",
-    "<strong class='email-placeholder'>[Email Address]</strong>.",
+    "<strong class='email-placeholder'>[littlemissdragon@outlook.com]</strong>.",
     "</p>"
   ],
-  "subject": "Your Form Subject",
-  "title": "Your Custom Title",
-  "send_button_text": "Custom Submit Text",
-  "download_button_text": "Custom Download Text",
-  "missing_field_message": "Custom Missing Field Alert Message",
+  "subject": "Contact Form",
+  "title": "Contact",
+  "send_button_text": "Send",
+  "download_button_text": "Download",
+  "missing_field_message": "Please fill out the information",
   "enable_form_download": true,
-  "form_backend_url": null,
+  "form_backend_url": "https://formspree.io/f/mldrrebn",
   "ignore_file_upload": true,
-  "email": "your_email@example.com",
+  "email": "littlemissdragon@outlook.com",
   "questions": [
     {
-      "label": "Upload funny memes",
-      "name": "meme_imgs",
-      "type": "file",
-      "required": true,
-      "custom": {
-        "multiple": true
-      }
-    },
-    {
-      "label": [
-          "This is a multiline label. It is intended to make it easier to write",
-          "multiline questions and include <i>interesting</i>",
-          "<a href='https://developer.mozilla.org/en-US/docs/Web/HTML'",
-          "target='_blank'>HTML Syntax</a>",
-          "directly in your <i>question text</i>"
-      ],
-      "name": "multiline_html_question",
-      "type": "text",
-      "required": false
-    },
-    {
-      "label": "Select your favorite color",
-      "name": "favorite_color",
-      "type": "selectbox",
-      "required": true,
-      "options": [
-        {
-          "label": "--Choose your favorite color(s)--",
-          "value": "",
-          "selected": true,
-          "disabled": true
-        },
-        {"label": "Red", "value": "red"},
-        {"label": "Blue", "value": "blue"},
-        {"label": "Green", "value": "green"},
-        {"label": "Yellow", "value": "yellow"},
-        {"label": "Purple", "value": "purple"},
-        {"label": "Orange", "value": "orange"},
-        {"label": "Pink", "value": "pink"},
-        {"label": "Black", "value": "black"},
-        {"label": "White", "value": "white"}
-      ],
-      "custom": {
-        "multiple": true
-      }
-    },
-    {
-      "label": "имя (Name)",
+      "label": " * 姓名 (Name)",
       "name": "name",
       "type": "text",
       "required": true
     },
     {
-      "label": "ایمیل (Email)",
+      "label": "* Email",
       "name": "email",
       "type": "email",
       "required": true
     },
     {
-      "label": "Telephone Number (Optional)",
-      "name": "telephone",
-      "type": "tel",
-      "required": false
-    },
-    {
-      "label": "Age",
-      "name": "age",
-      "type": "number",
-      "required": true
-    },
-    {
-      "label": "Appointment Date/Time",
-      "name": "apt_time",
-      "type": "datetime-local",
-      "required": true
-    },
-    {
-      "label": "在历史上的军事战争中，你认为最关键的战略决策是什么",
-      "name": "chinese_question",
-      "type": "textarea",
-      "required": true
-    },
-    {
-      "label": "Website",
-      "name": "site_url",
-      "type": "url",
-      "required": true
-    },
-    {
-      "label": "Select your country",
-      "name": "country",
+      "label": "* 你需要的服务是 (What service(s) do you need)",
+      "name": "Service",
       "type": "selectbox",
       "required": true,
       "options": [
         {
-          "label": "--Select all that apply--",
+          "label": "选择所有适用的选项 (Select all that apply)",
           "value": "",
           "selected": true,
           "disabled": true
         },
-        {"label": "USA", "value": "USA"},
-        {"label": "Canada", "value": "CAN"},
-        {"label": "United Kingdom", "value": "UK"},
-        {"label": "Australia", "value": "AUS"}
+        {"label": "网站搭建 (Website Development)", "value": "website"},
+        {"label": "商业战略咨询 (Strategic Consulting)", "value": "strategy"},
+        {"label": "数据分析 (Data Analytics)", "value": "analytics"}
       ],
       "custom": {
         "multiple": true
